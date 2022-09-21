@@ -22,10 +22,9 @@ const Login = ({setToken}) => {
 
         const token = await loginUser({
             email,
-            password
+            password,
+            type: "Custom"
         });
-
-        console.log(token);
 
         setToken(token.token);
     }
